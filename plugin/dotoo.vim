@@ -102,7 +102,8 @@ endif
 augroup dotoo
   au!
 
-  autocmd FileType dotoo call dotoo#parser#parsefile({'force': 1})
+  autocmd FileType org call dotoo#parser#parsefile({'force': 1})
+  "autocmd FileType dotoo call dotoo#parser#parsefile({'force': 1})
 augroup END
 
 command! -buffer -nargs=? DotooAdjustDate call dotoo#adjust_date(<q-args>)

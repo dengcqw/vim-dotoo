@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead *.dotoo setf dotoo
+autocmd BufNewFile,BufRead *.dotoo setf org
