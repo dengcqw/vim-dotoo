@@ -25,18 +25,18 @@ iabbrev <expr> <buffer> <silent> :date: '['.strftime(g:dotoo#time#date_day_forma
 iabbrev <expr> <buffer> <silent> :datetime: '['.strftime(g:dotoo#time#datetime_format).']'
 
 if !g:dotoo_disable_mappings
-  if !hasmapto('<Plug>(dotoo-checkbox-toggle)')
-    nmap <buffer> cic <Plug>(dotoo-checkbox-toggle)
-  endif
-  if !hasmapto('<Plug>(dotoo-date-increment)')
-    nmap <buffer> <C-A> <Plug>(dotoo-date-increment)
-  endif
-  if !hasmapto('<Plug>(dotoo-date-decrement)')
-    nmap <buffer> <C-X> <Plug>(dotoo-date-decrement)
-  endif
-  if !hasmapto('<Plug>(dotoo-date-normalize)')
-    nmap <buffer> <C-C><C-C> <Plug>(dotoo-date-normalize)
-  endif
+  "if !hasmapto('<Plug>(dotoo-checkbox-toggle)')
+    "nmap <buffer> cic <Plug>(dotoo-checkbox-toggle)
+  "endif
+  "if !hasmapto('<Plug>(dotoo-date-increment)')
+    "nmap <buffer> <C-A> <Plug>(dotoo-date-increment)
+  "endif
+  "if !hasmapto('<Plug>(dotoo-date-decrement)')
+    "nmap <buffer> <C-X> <Plug>(dotoo-date-decrement)
+  "endif
+  "if !hasmapto('<Plug>(dotoo-date-normalize)')
+    "nmap <buffer> <C-C><C-C> <Plug>(dotoo-date-normalize)
+  "endif
 endif
 
 command! -buffer -nargs=? DotooAdjustDate call dotoo#date#adjust(<q-args>)

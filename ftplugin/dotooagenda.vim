@@ -32,9 +32,9 @@ if !g:dotoo_disable_mappings
     nmap <buffer> <nowait> / <Plug>(dotoo-agenda-filter)
   endif
 
-  nmap <buffer> <silent> <nowait> <CR> :<C-U>call dotoo#agenda#goto_headline('edit')<CR>
-  nmap <buffer> <silent> <nowait> <C-S> :<C-U>call dotoo#agenda#goto_headline('split')<CR>
-  nmap <buffer> <silent> <nowait> <C-V> :<C-U>call dotoo#agenda#goto_headline('vsplit')<CR>
-  nmap <buffer> <silent> <nowait> <C-T> :<C-U>call dotoo#agenda#goto_headline('tabe')<CR>
-  nmap <buffer> <silent> <nowait> <Tab> <C-V>
+  nnoremap <buffer> <silent> <nowait> <CR> :call dotoo#agenda#goto_headline('edit')<CR>
+  nnoremap <buffer> <silent> <nowait> <C-S> :call dotoo#agenda#goto_headline('split')<CR>
+  nnoremap <buffer> <silent> <nowait> <C-V> :call dotoo#agenda#goto_headline('vsplit')<CR>
+  nnoremap <buffer> <silent> <nowait> <C-T> :call dotoo#agenda#goto_headline('tabe')<CR>
+  nnoremap <buffer> <silent> <nowait> <Tab> <C-V>
 endif
