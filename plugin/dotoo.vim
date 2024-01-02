@@ -92,10 +92,10 @@ nnoremap <silent> <Plug>(dotoo-agenda-filter)
 
 if !g:dotoo_disable_mappings
   if !hasmapto('<Plug>(dotoo-agenda)')
-    nmap gA <Plug>(dotoo-agenda)
+    nmap ga <Plug>(dotoo-agenda)
   endif
   if !hasmapto('<Plug>(dotoo-capture)')
-    nmap gC <Plug>(dotoo-capture)
+    nmap gc <Plug>(dotoo-capture)
   endif
 endif
 
